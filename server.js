@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import express from "express";
-import db from "./db.js";
+import pool from "./db.js";
 
 dotenv.config();
 
