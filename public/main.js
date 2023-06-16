@@ -2,19 +2,29 @@
 const API_URL = "https://mvp-project-web-service.onrender.com";
 
 //functions for getting/updating/creating/deleting
-const getGoal = async () => {
+const getGoals = async () => {
   const response = await fetch(`${API_URL}/goals`);
   const data = await response.json();
-  console.log(data);
+  goalCards(data);
 };
-getGoal();
+
+const goalCards = (data) => {
+  const goalsContainer = document.getElementById("goalsContainer");
+
+  for (let goal of data) {
+    const goalCard = document.createElement("div");
+    goalCard.setAttribute("id", `${goal.id}`);
+    goalCard.textContent = `${goal.goal}`;
+    goalsContainer.appendChild(goalCard);
+  }
+};
 
 // DOM variables
 const fetchGoals = document.getElementById("goalBtn");
-const goalsContainer = document.getElementById("goalsContainer");
-const goalsCard = document.getElementById("goalsCard");
 
 // Event Listeners
-fetchGoals.addEventListener("click", () => {
-  getGoal();
-});
+// fetchGoals.addEventListener("click", () => {
+//   getGoal();
+// });
+
+getGoals();
