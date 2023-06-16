@@ -32,7 +32,6 @@ const createGoalCards = (data) => {
     const goalCard = document.createElement("div");
     goalCard.setAttribute("id", `${goal.id}`);
     goalCard.textContent = `${goal.goal}`;
-    goalCard.style.border = "2px solid black";
     goalsContainer.appendChild(goalCard);
 
     const editButton = document.createElement("button");
