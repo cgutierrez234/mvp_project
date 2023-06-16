@@ -1,3 +1,7 @@
 body {
   background-color: blanchedalmond;
 }
+
+#goalsContainer {
+  display: inline-table;
+}
