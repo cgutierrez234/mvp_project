@@ -58,7 +58,7 @@ app.put("/goals/:id", async (req, res) => {
       [goal, id]
     );
     if (result.rowCount === 0) {
-      res.status(404).send("Cannot update card at that id");
+      res.status(404).send("Cannot update goal at that id");
     } else {
       res.json(result.rows[0]);
     }
