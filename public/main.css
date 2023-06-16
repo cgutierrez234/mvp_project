@@ -2,6 +2,7 @@ body {
   background-color: blanchedalmond;
 }
 
-#header {
-  color: red;
+#goalsContainer {
+  display: inline-block;
+  margin: auto;
 }
