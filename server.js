@@ -4,11 +4,11 @@ import db from "./db.js";
 
 dotenv.config();
 
-app.use(express.json());
-app.use(express.static("public"));
-
 const port = process.env.PORT || 3000;
 const app = express();
+
+app.use(express.json());
+app.use(express.static("public"));
 
 app.get("/goals", async (req, res) => {
   try {
