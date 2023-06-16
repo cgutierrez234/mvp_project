@@ -5,6 +5,7 @@ const API_URL = "https://mvp-project-web-service.onrender.com";
 const getGoal = async () => {
   const response = await fetch(`${API_URL}/goals`);
   const data = await response.json();
+  console.log(data);
 };
 getGoal();
 
