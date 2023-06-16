@@ -17,6 +17,12 @@ const createGoalCards = (data) => {
     goalCard.textContent = `${goal.goal}`;
     goalsContainer.appendChild(goalCard);
 
+    const createGoal = document.createElement("input");
+    goalCard.appendChild(createGoal);
+
+    const createBtn = document.createElement("button");
+    createBtn.textContent = "New Goal";
+
     const editButton = document.createElement("button");
     editButton.textContent = "Edit";
     goalCard.appendChild(editButton);
