@@ -8,26 +8,25 @@ const getGoals = async () => {
   createGoalCards(data);
 };
 
-const createGoal = async (goal) => {
-  const goalsContainer = document.getElementById("goalsContainer");
-  goalsContainer.innerHTML = "";
-  input = document.getElementById("newGoalInput");
-  const options = {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      goal: `${input.value}`,
-    }),
-  };
+// const createGoal = async (goal) => {
+//   const goalsContainer = document.getElementById("goalsContainer");
+//   goalsContainer.innerHTML = "";
+//   input = document.getElementById("newGoalInput");
+//   const options = {
+//     method: "POST",
+//     headers: {
+//       Accept: "application/json",
+//       "content-type": "application/json",
+//     },
+//     body: JSON.stringify({
+//       goal: `${input.value}`,
+//     }),
+//   };
 
-  const response = await fetch(`${API_URL}/goals`, options);
-  const data = await response.json();
-
-  createGoalCards(data);
-};
+//   const response = await fetch(`${API_URL}/goals`, options);
+//   const data = await response.json();
+//   createGoalCards(data);
+// };
 
 const createGoalCards = (data) => {
   const goalsContainer = document.getElementById("goalsContainer");
@@ -49,8 +48,8 @@ const createGoalCards = (data) => {
 };
 
 // eventListeners
-const createGoalBtn = document.getElementById("createBtn");
-createGoalBtn.addEventListener("click", () => {
-  createGoal();
-});
+// const createGoalBtn = document.getElementById("createBtn");
+// createGoalBtn.addEventListener("click", () => {
+//   createGoal();
+// });
 getGoals();
