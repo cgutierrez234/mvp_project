@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 app.get("/goals", async (req, res) => {
   try {
-    const result = await pool.query("SELECT * FROM goals");
+    const result = await pool.query("SELECT * FROM goals ORDER BY id ASC");
     res.json(result.rows);
   } catch (err) {
     console.error(err);

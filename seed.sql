@@ -3,10 +3,9 @@ DROP TABLE IF EXISTS goals;
 CREATE TABLE goals(
     id serial PRIMARY KEY,
     goal varchar (50)
-)
+);
 
 
-DELETE FROM goals*;
 
 INSERT INTO goals(goal) VALUES ('Lose weight');
 INSERT INTO goals(goal) VALUES ('Run a marathon');
