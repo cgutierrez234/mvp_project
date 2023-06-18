@@ -8,7 +8,7 @@ const getGoals = async () => {
   createGoalCards(data);
 };
 
-const createGoal = async (input) => {
+const createGoal = async (goal) => {
   goalCards.innerHTML = "";
   input = document.getElementById("newGoalInput");
   const options = {
