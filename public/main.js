@@ -28,7 +28,6 @@ const createGoal = async (goal) => {
 
   goalsContainer.innerHTML = "";
   createGoal(goal);
-  getGoals();
 };
 
 const createGoalCards = (data) => {
@@ -54,5 +53,6 @@ const createGoalCards = (data) => {
 const createGoalBtn = document.getElementById("createBtn");
 createGoalBtn.addEventListener("click", () => {
   createGoal();
+  getGoals();
 });
 getGoals();
