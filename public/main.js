@@ -51,8 +51,6 @@ const updateGoal = async (id, text) => {
     }),
   };
   await fetch(`${API_URL}/goals/${id}`, options);
-
-  getGoals();
 };
 
 const createGoalCards = (data) => {
@@ -74,10 +72,7 @@ const createGoalCards = (data) => {
     editButton.addEventListener("click", (e) => {
       //   updateGoal(e.target.parentElement.id, "This is a test");
       textContentContainer.contentEditable = "true";
-      const sibling = e.target.parentElement.previousSibling;
-      console.log(sibling);
-      console.log(e);
-      sibling.focus();
+      e.target.parentElement.previousSibling.focus();
     });
     editButton.textContent = "Edit";
     editButton.classList.add("editBtn");
