@@ -39,6 +39,22 @@ const deleteGoal = async (id) => {
   getGoals();
 };
 
+const updateGoal = async (id, text) => {
+  const options = {
+    method: "PUT",
+    headers: {
+      Accept: "application/json",
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      goal: `${text}`,
+    }),
+  };
+  await fetch(`${API_URL}/goals/${id}`, options);
+
+  getGoals();
+};
+
 const createGoalCards = (data) => {
   const goalsContainer = document.getElementById("goalsContainer");
   goalsContainer.innerHTML = "";
@@ -49,6 +65,9 @@ const createGoalCards = (data) => {
     goalsContainer.appendChild(goalCard);
 
     const editButton = document.createElement("button");
+    editButton.addEventListener("click", (e) => {
+      updateGoal(e.target.parentElement.id, "This is a test");
+    });
     editButton.textContent = "Edit";
     editButton.classList.add("editBtn");
     goalCard.appendChild(editButton);
