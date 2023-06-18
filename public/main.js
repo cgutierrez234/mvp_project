@@ -26,7 +26,7 @@ const createGoal = async (goal) => {
   const data = await response.json();
 
   goalsContainer.innerHTML = "";
-  createGoal();
+
   getGoals();
 };
 
