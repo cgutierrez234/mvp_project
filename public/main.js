@@ -50,6 +50,7 @@ const createGoalCards = (data) => {
 
     const editButton = document.createElement("button");
     editButton.textContent = "Edit";
+    editButton.classList.add("editBtn");
     goalCard.appendChild(editButton);
 
     const deleteButton = document.createElement("button");

@@ -1,3 +1,8 @@
 body {
   background-color: blanchedalmond;
 }
+
+.editBtn,
+.deleteBtn {
+  cursor: pointer;
+}
