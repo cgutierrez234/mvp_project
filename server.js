@@ -70,10 +70,7 @@ app.put("/goals/:id", async (req, res) => {
 app.delete("/goals/:id", async (req, res) => {
   const { id } = req.params;
   try {
-    const result = await pool.query(
-      "DELETE FROM goals WHERE id=$1 RETURNING*",
-      [id]
-    );
+    const result = await pool.query("DELETE FROM goals WHERE id=$1", [id]);
     if (result.rowCount === 0) {
       res.status(404).send("Unable to delete goal at the given id");
     } else {
