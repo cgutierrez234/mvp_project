@@ -26,7 +26,6 @@ const createGoal = async (goal) => {
   const response = await fetch(`${API_URL}/goals`, options);
   const data = await response.json();
 
-  goalsContainer.innerHTML = "";
   createGoal(goal);
 };
 
