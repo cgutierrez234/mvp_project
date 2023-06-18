@@ -26,7 +26,7 @@ const createGoal = async () => {
   getGoals();
 };
 
-const deleteGoal = async () => {
+const deleteGoal = async (id) => {
   const options = {
     method: "DELETE",
     headers: {
@@ -34,6 +34,9 @@ const deleteGoal = async () => {
       "content-type": "application/json",
     },
   };
+  await fetch(`${API_URL}/goals/${id}`, options);
+
+  getGoals();
 };
 
 const createGoalCards = (data) => {
@@ -51,8 +54,7 @@ const createGoalCards = (data) => {
 
     const deleteButton = document.createElement("button");
     deleteButton.addEventListener("click", (e) => {
-      console.log(e.target.parentElement.id);
-      //   deleteGoal(id);
+      deleteGoal(e.target.parentElement.id);
     });
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("deleteBtn");
