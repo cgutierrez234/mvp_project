@@ -36,7 +36,7 @@ app.get("/goals/:id", async (req, res) => {
 });
 
 app.post("/goals", async (req, res) => {
-  const { goal } = req.body;
+  const { input.value } = req.body;
   try {
     const result = await pool.query(
       "INSERT INTO goals (goal) VALUES ($1) RETURNING*",
