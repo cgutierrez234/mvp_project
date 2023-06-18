@@ -8,7 +8,7 @@ const getGoals = async () => {
   createGoalCards(data);
 };
 
-const createGoal = async () => {
+const createGoal = async (goal) => {
   const goalsContainer = document.getElementById("goalsContainer");
 
   input = document.getElementById("newGoalInput");
@@ -27,8 +27,7 @@ const createGoal = async () => {
   const data = await response.json();
 
   goalsContainer.innerHTML = "";
-  createGoal(data);
-  createGoalCards(data);
+  createGoalCards(createGoal);
 };
 
 const createGoalCards = (data) => {
