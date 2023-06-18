@@ -52,6 +52,5 @@ const createGoalCards = (data) => {
 const createGoalBtn = document.getElementById("createBtn");
 createGoalBtn.addEventListener("click", () => {
   createGoal();
-  getGoals();
 });
 getGoals();
