@@ -8,7 +8,7 @@ const getGoals = async () => {
   createGoalCards(data);
 };
 
-const createGoal = async (input) => {
+const createGoal = async (goal) => {
   const goalsContainer = document.getElementById("goalsContainer");
   goalsContainer.innerHTML = "";
   input = document.getElementById("newGoalInput");
@@ -19,7 +19,7 @@ const createGoal = async (input) => {
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      input: `${input.value}`,
+      goal: `${input.value}`,
     }),
   };
 
