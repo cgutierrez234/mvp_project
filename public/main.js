@@ -80,8 +80,7 @@ const createGoalCards = (data) => {
 
     const deleteButton = document.createElement("button");
     deleteButton.addEventListener("click", (e) => {
-      deleteGoal(e.target.parentElement.id);
-      console.log(e.target.parentElement.id);
+      deleteGoal(e.target.parentElement.previousSibling.id);
     });
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("deleteBtn");
