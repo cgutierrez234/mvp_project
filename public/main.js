@@ -9,6 +9,8 @@ const getGoals = async () => {
 };
 
 const createGoal = async (input) => {
+  const goalsContainer = document.getElementById("goalsContainer");
+  goalsContainer.innerHTML = "";
   input = document.getElementById("newGoalInput");
   const options = {
     method: "POST",
