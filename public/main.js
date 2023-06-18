@@ -16,9 +16,10 @@ const createGoal = async (goal) => {
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      goal: `${goal.goal}`,
+      goal: `${goal}`,
     }),
   };
+
   const response = await fetch(`${API_URL}/goals`, options);
   const data = await response.json();
   goalCard.innerHTML = "";
