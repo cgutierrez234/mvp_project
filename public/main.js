@@ -61,17 +61,23 @@ const createGoalCards = (data) => {
   for (let goal of data) {
     const goalCard = document.createElement("div");
     goalCard.setAttribute("id", `${goal.id}`);
-    goalCard.textContent = `${goal.goal}`;
     goalsContainer.appendChild(goalCard);
+
+    const textContentContainer = document.createElement("div");
+    textContentContainer.textContent = goal.goal;
+    goalCard.appendChild(textContentContainer);
+
+    const goalBtnContainer = document.createElement("div");
+    goalCard.appendChild(goalBtnContainer);
 
     const editButton = document.createElement("button");
     editButton.addEventListener("click", (e) => {
       //   updateGoal(e.target.parentElement.id, "This is a test");
-      goalCard.contentEditable = "true";
+      textContentContainer.contentEditable = "true";
     });
     editButton.textContent = "Edit";
     editButton.classList.add("editBtn");
-    goalCard.appendChild(editButton);
+    goalBtnContainer.appendChild(editButton);
 
     const deleteButton = document.createElement("button");
     deleteButton.addEventListener("click", (e) => {
@@ -79,7 +85,7 @@ const createGoalCards = (data) => {
     });
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("deleteBtn");
-    goalCard.appendChild(deleteButton);
+    goalBtnContainer.appendChild(deleteButton);
   }
 };
 
