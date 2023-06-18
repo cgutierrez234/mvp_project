@@ -28,7 +28,6 @@ const createGoal = async (goal) => {
 
   goalsContainer.innerHTML = "";
   createGoal(goal);
-  createGoalCards(data);
 };
 
 const createGoalCards = (data) => {
