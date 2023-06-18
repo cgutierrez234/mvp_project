@@ -42,7 +42,7 @@ app.post("/goals", async (req, res) => {
       "INSERT INTO goals (goal) VALUES ($1) RETURNING*",
       [goal]
     );
-    res.status(201).send(result.rows[0]);
+    res.status(201).json(result.rows[0]);
   } catch (err) {
     console.error(err);
     res.status(500).send("Unable to commit new goal to database");
