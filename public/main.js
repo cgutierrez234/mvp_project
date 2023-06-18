@@ -25,7 +25,7 @@ const createGoal = async () => {
 
   const response = await fetch(`${API_URL}/goals`, options);
   const data = await response.json();
-  createGoalCards(data);
+  createGoal(data);
 };
 
 const createGoalCards = (data) => {
@@ -48,8 +48,8 @@ const createGoalCards = (data) => {
 };
 
 // eventListeners
-// const createGoalBtn = document.getElementById("createBtn");
-// createGoalBtn.addEventListener("click", () => {
-//   createGoal();
-// });
+const createGoalBtn = document.getElementById("createBtn");
+createGoalBtn.addEventListener("click", () => {
+  createGoal();
+});
 getGoals();
