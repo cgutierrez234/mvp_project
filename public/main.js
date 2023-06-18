@@ -26,6 +26,16 @@ const createGoal = async () => {
   getGoals();
 };
 
+const deleteGoal = async () => {
+  const options = {
+    method: "DELETE",
+    headers: {
+      Accept: "application/json",
+      "content-type": "application/json",
+    },
+  };
+};
+
 const createGoalCards = (data) => {
   const goalsContainer = document.getElementById("goalsContainer");
   goalsContainer.innerHTML = "";
@@ -40,7 +50,12 @@ const createGoalCards = (data) => {
     goalCard.appendChild(editButton);
 
     const deleteButton = document.createElement("button");
+    deleteButton.addEventListener("click", (e) => {
+      console.log(e);
+      //   deleteGoal(id);
+    });
     deleteButton.textContent = "Delete";
+    deleteButton.classList.add("deleteBtn");
     goalCard.appendChild(deleteButton);
   }
 };
@@ -50,4 +65,5 @@ const createGoalBtn = document.getElementById("createBtn");
 createGoalBtn.addEventListener("click", () => {
   createGoal();
 });
+
 getGoals();
