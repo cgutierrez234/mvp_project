@@ -16,7 +16,7 @@ const createGoal = async (goal) => {
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      goal: `${goal.goal}`,
+      goal: `${goal}`,
     }),
   };
 
