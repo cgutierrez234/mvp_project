@@ -38,11 +38,10 @@ app.get("/goals/:id", async (req, res) => {
 app.post("/goals", async (req, res) => {
   const { goal } = req.body;
   try {
-    const result = await pool.query(
-      "INSERT INTO goals (goal) VALUES ($1) RETURNING*",
-      [goal]
-    );
-    res.status(201).json(result.rows[0]);
+    const result = await pool.query("INSERT INTO goals (goal) VALUES ($1)", [
+      goal,
+    ]);
+    res.status(201).send();
   } catch (err) {
     console.error(err);
     res.status(500).send("Unable to commit new goal to database");

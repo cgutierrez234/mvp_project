@@ -21,14 +21,12 @@ const createGoal = async () => {
     }),
   };
 
-  const response = await fetch(`${API_URL}/goals`, options);
-  const data = await response.json();
-  console.log(data);
+  await fetch(`${API_URL}/goals`, options);
+
   getGoals();
 };
 
 const createGoalCards = (data) => {
-  console.log(data);
   const goalsContainer = document.getElementById("goalsContainer");
   goalsContainer.innerHTML = "";
   for (let goal of data) {
