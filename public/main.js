@@ -51,6 +51,8 @@ const updateGoal = async (id, text) => {
     }),
   };
   await fetch(`${API_URL}/goals/${id}`, options);
+
+  getGoals();
 };
 
 const createGoalCards = (data) => {
@@ -80,7 +82,7 @@ const createGoalCards = (data) => {
 
     const deleteButton = document.createElement("button");
     deleteButton.addEventListener("click", (e) => {
-      deleteGoal(e.target.parentElement.previousSibling.id);
+      deleteGoal(e.target.parentElement.id);
     });
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("deleteBtn");
