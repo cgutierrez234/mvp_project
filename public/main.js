@@ -10,8 +10,6 @@ const getGoals = async () => {
 
 const createGoal = async () => {
   const goalsContainer = document.getElementById("goalsContainer");
-  goalsContainer.innerHTML = "";
-  createGoalCards(data);
 
   input = document.getElementById("newGoalInput");
   const options = {
@@ -27,7 +25,10 @@ const createGoal = async () => {
 
   const response = await fetch(`${API_URL}/goals`, options);
   const data = await response.json();
+
+  goalsContainer.innerHTML = "";
   createGoal(data);
+  createGoalCards(data);
 };
 
 const createGoalCards = (data) => {
