@@ -1,11 +1,15 @@
 body {
   background-color: blanchedalmond;
 }
-
+#createBtn {
+  cursor: pointer;
+}
 .editBtn,
 .deleteBtn {
   cursor: pointer;
 }
-#goalsContainer {
+
+goal #goalsContainer {
   display: flex;
+  flex-direction: column-reverse;
 }
