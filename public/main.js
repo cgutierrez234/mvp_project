@@ -72,9 +72,12 @@ const createGoalCards = (data) => {
 
     const editButton = document.createElement("button");
     editButton.addEventListener("click", (e) => {
-      //   updateGoal(e.target.parentElement.id, "This is a test");
       textContentContainer.contentEditable = "true";
       e.target.parentElement.previousSibling.focus();
+      updateGoal(e.target.parentElement.id, "This is a test");
+
+      const submitButton = document.createElement("button");
+      submitButton.addEventListener("click", (e) => {});
     });
     editButton.textContent = "Edit";
     editButton.classList.add("editBtn");
@@ -82,7 +85,6 @@ const createGoalCards = (data) => {
 
     const deleteButton = document.createElement("button");
     deleteButton.addEventListener("click", () => {
-      //   console.log(e);
       deleteGoal(goal.id);
     });
     deleteButton.textContent = "Delete";
