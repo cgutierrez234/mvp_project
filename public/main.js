@@ -75,7 +75,7 @@ const createGoalCards = (data) => {
       textContentContainer.contentEditable = "true";
       e.target.parentElement.previousSibling.focus();
       updateGoal(
-        e.target.parentElement.previousSibling,
+        e.target.parentElement.previousSibling.id,
         textContentContainer.value
       );
     });
