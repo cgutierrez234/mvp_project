@@ -6,3 +6,6 @@ body {
 .deleteBtn {
   cursor: pointer;
 }
+#goalsContainer {
+  display: flex;
+}
