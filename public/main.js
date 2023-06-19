@@ -74,6 +74,7 @@ const createGoalCards = (data) => {
     editButton.addEventListener("click", (e) => {
       textContentContainer.contentEditable = "true";
       e.target.parentElement.previousSibling.focus();
+      editButton.style.opacity = 0;
       //   updateGoal(
       //     e.target.parentElement.previousSibling.id,
       //     textContentContainer.value
