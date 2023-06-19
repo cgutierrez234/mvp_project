@@ -81,7 +81,7 @@ const createGoalCards = (data) => {
     goalBtnContainer.appendChild(editButton);
 
     const deleteButton = document.createElement("button");
-    deleteButton.addEventListener("click", (e) => {
+    deleteButton.addEventListener("click", () => {
       //   console.log(e);
       deleteGoal(goal.id);
     });
