@@ -15,7 +15,8 @@
 .updateGoalButton {
   cursor: pointer;
 }
-.updateGoalButton {
+.goalBtnContainer {
+  display: flex;
   gap: 5px;
 }
 body {
