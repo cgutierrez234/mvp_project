@@ -74,7 +74,7 @@ const createGoalCards = (data) => {
     editButton.addEventListener("click", (e) => {
       textContentContainer.contentEditable = "true";
       e.target.parentElement.previousSibling.focus();
-      editButton.style.opacity = 0;
+      editButton.style.visibility = "hidden";
 
       const submitButton = document.createElement("button");
       submitButton.textContent = "Submit";
