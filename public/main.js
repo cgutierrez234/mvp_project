@@ -51,7 +51,6 @@ const updateGoal = async (id, text) => {
       goal: `${text}`,
     }),
   };
-  console.log(text);
   await fetch(`${API_URL}/goals/${id}`, options);
 
   getGoals();
@@ -94,7 +93,7 @@ const createGoalCards = (data) => {
     const updateGoalButton = document.createElement("button");
     updateGoalButton.addEventListener("click", (e) => {
       console.log(e);
-      //   console.log(e.target.parentElement.previousSibling.value);
+      console.log(e.target.parentElement.previousSibling);
       updateGoal(goal.id, e.target.parentElement.previousSibling.value);
       updateGoalButton.style.visibility = "Hidden";
       editButton.style.visibility = "Visible";
