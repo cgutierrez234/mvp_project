@@ -51,6 +51,7 @@ const updateGoal = async (id, text) => {
       goal: `${text}`,
     }),
   };
+  console.log(text);
   await fetch(`${API_URL}/goals/${id}`, options);
 
   getGoals();
