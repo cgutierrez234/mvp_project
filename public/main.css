@@ -15,16 +15,15 @@
   cursor: pointer;
 }
 
-#newGoalInput {
-  justify-self: center;
+#createGoal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
-#createBtn {
-  margin: auto;
-}
-
-goal #goalsContainer {
+#goalsContainer {
   display: flex;
 }
 
