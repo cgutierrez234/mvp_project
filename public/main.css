@@ -38,7 +38,9 @@ h1 {
 
 #mainContainer {
   height: 800px;
-  width: 600px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 2px;
 }
 #createGoal {
   display: flex;
@@ -51,8 +53,6 @@ h1 {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
-  border-radius: 2px;
 }
 
 .goalCard {
