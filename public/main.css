@@ -30,7 +30,7 @@ body {
 
 #mainContainer {
   justify-self: center;
-  margin-top: 15%;
+  align-self: center;
   height: 800px;
   width: 800px;
   border: 1px solid black;
