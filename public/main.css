@@ -31,7 +31,8 @@ body {
 
 h1 {
   font-size: 30px;
-  padding-bottom: 10 px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #mainContainer {
