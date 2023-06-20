@@ -15,6 +15,9 @@
   cursor: pointer;
 }
 
+#mainContainer {
+  margin-top: 15%;
+}
 #createGoal {
   display: flex;
   justify-content: center;
