@@ -93,7 +93,7 @@ const createGoalCards = (data) => {
     const updateGoalButton = document.createElement("button");
     updateGoalButton.addEventListener("click", (e) => {
       console.log(e);
-      console.log(e.target.parentElement.previousSibling.textContent);
+      console.log(e.target.parentElement.previousSibling.id);
       updateGoal(
         e.target.parentElement.previousSibling.id,
         e.target.parentElement.previousSibling.value
