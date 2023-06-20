@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 
-#mainContainer {
+#createGoal {
   display: flex;
   justify-content: center;
   align-items: center;
