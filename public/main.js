@@ -93,8 +93,8 @@ const createGoalCards = (data) => {
 
     const updateGoalButton = document.createElement("button");
     updateGoalButton.addEventListener("click", (e) => {
-      console.log(textContentContainer.value);
-      updateGoal(goal.id, textContentContainer.value);
+      console.log(e.target.parentElement.previousSibling.value);
+      updateGoal(goal.id, e.target.parentElement.previousSibling.value);
       updateGoalButton.style.visibility = "Hidden";
       editButton.style.visibility = "Visible";
     });
