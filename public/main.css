@@ -32,11 +32,11 @@ body {
 h1 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 #mainContainer {
-  margin-top: 10%;
+  margin-top: 5%;
   height: 800px;
   width: 600px;
 }
