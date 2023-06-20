@@ -16,5 +16,5 @@ goal #goalsContainer {
 }
 
 #mainImage {
-  background: url(./img/Crumbled_notebook.jpeg);
+  background: url(./img/Crumbled_notebook.jpeg) no-repeat center center/cover;
 }
