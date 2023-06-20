@@ -29,11 +29,15 @@ body {
   height: 100%;
 }
 
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
 #mainContainer {
   margin-top: 10%;
   height: 800px;
   width: 600px;
-  border: 1px solid black;
 }
 #createGoal {
   display: flex;
