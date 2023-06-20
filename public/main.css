@@ -15,15 +15,9 @@
 .updateGoalButton {
   cursor: pointer;
 }
-
-.editBtn {
-  margin-right: 1rem;
-}
-
 .updateGoalButton {
-  margin-left: 1 rem;
+  gap: 5px;
 }
-
 body {
   display: flex;
   flex-direction: row;
