@@ -40,7 +40,7 @@ h1 {
   height: 800px;
   width: 500px;
   border: 2px solid black;
-  border-radius: 2px;
+  border-radius: 30px;
 }
 #createGoal {
   display: flex;
