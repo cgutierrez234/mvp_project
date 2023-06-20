@@ -53,8 +53,8 @@ app.put("/goals/:id", async (req, res) => {
   const { goal } = req.body;
   try {
     const result = await pool.query("UPDATE goals SET goal = $1 WHERE id=$2", [
-      id,
       goal,
+      id,
     ]);
     if (result.rowCount === 0) {
       res.status(404).send("Cannot update goal at that id");
