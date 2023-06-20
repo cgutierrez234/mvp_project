@@ -33,6 +33,9 @@ const deleteGoal = async (id) => {
       Accept: "application/json",
       "content-type": "application/json",
     },
+    body: JSON.stringify({
+      id: `${id}`,
+    }),
   };
   await fetch(`${API_URL}/goals/${id}`, options);
 
@@ -84,7 +87,7 @@ const createGoalCards = (data) => {
 
     const deleteButton = document.createElement("button");
     deleteButton.addEventListener("click", (e) => {
-      deleteGoal(e.target.parentElement.previousSibling);
+      deleteGoal(e.target.parentElement.previousSibling.id);
     });
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("deleteBtn");
