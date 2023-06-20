@@ -24,6 +24,7 @@
 
 #goalsContainer {
   display: flex;
+  margin-top: 5 rem;
 }
 
 .goalCard {
