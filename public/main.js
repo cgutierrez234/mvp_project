@@ -98,7 +98,7 @@ const createGoalCards = (data) => {
     submitButton.textContent = "Submit";
     submitButton.classList.add("submitBtn");
     submitButton.style.visibility = "Hidden";
-    goalButtonContainer.appendChild(submitButton);
+    goalBtnContainer.appendChild(submitButton);
   }
 };
 
