@@ -15,6 +15,14 @@
   cursor: pointer;
 }
 
+#newGoalInput {
+  margin: auto;
+}
+
+#createBtn {
+  margin: auto;
+}
+
 goal #goalsContainer {
   display: flex;
 }
@@ -25,4 +33,5 @@ goal #goalsContainer {
   justify-content: center;
   align-items: center;
   margin: auto;
+  text-align: center;
 }
