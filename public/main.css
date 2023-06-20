@@ -22,5 +22,10 @@ goal #goalsContainer {
   justify-content: center;
   align-items: center;
   margin-left: 100 px;
-  background-image: url(./img/Crumbled_notebook.jpeg);
+  background-image: url(./img/Crumbled_notebook.jpeg) center;
+}
+
+.goalCard {
+  display: flex;
+  margin: auto;
 }
