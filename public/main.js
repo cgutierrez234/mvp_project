@@ -96,6 +96,8 @@ const createGoalCards = (data) => {
       updateGoalButton.style.visibility = "Hidden";
       editButton.style.visibility = "Visible";
     });
+
+    updateGoalButton.style.visibility = "Hidden";
     updateGoalButton.textContent = "Update Goal";
     updateGoalButton.classList.add("updateGoalBtn");
     goalBtnContainer.appendChild(updateGoalButton);
