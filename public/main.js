@@ -92,13 +92,13 @@ const createGoalCards = (data) => {
 
     const updateGoalButton = document.createElement("button");
     updateGoalButton.addEventListener("click", (e) => {
-      updateGoal(goal.id, text);
+      updateGoal(goal.id, textContentContainer.value);
       updateGoalButton.style.visibility = "Hidden";
       editButton.style.visibility = "Visible";
+      updateGoalButton.style.visibility = "Hidden";
     });
     updateGoalButton.textContent = "Update Goal";
     updateGoalButton.classList.add("updateGoalBtn");
-    updateGoalButton.style.visibility = "Hidden";
     goalBtnContainer.appendChild(updateGoalButton);
   }
 };
