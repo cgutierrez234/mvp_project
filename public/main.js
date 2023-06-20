@@ -47,7 +47,7 @@ const updateGoal = async (id, text) => {
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      id: `${id}`,
+      //   id: `${id}`,
       goal: `${text}`,
     }),
   };
