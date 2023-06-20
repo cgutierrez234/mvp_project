@@ -28,7 +28,7 @@
   margin-top: 15%;
   height: 800px;
   width: 800 px;
-  border: 1 px solid black;
+  border-style: 1 px solid black;
   border-radius: 2px;
 }
 #createGoal {
