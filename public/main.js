@@ -75,12 +75,7 @@ const createGoalCards = (data) => {
       textContentContainer.contentEditable = "true";
       e.target.parentElement.previousSibling.focus();
       editButton.style.visibility = "hidden";
-      submitButton.style.visibility = "visible";
-
-      //   updateGoal(
-      //     e.target.parentElement.previousSibling.id,
-      //     textContentContainer.value
-      //   );
+      updateGoalButton.style.visibility = "visible";
     });
     editButton.textContent = "Edit";
     editButton.classList.add("editBtn");
@@ -94,11 +89,19 @@ const createGoalCards = (data) => {
     deleteButton.classList.add("deleteBtn");
     goalBtnContainer.appendChild(deleteButton);
 
-    const submitButton = document.createElement("button");
-    submitButton.textContent = "Submit";
-    submitButton.classList.add("submitBtn");
-    submitButton.style.visibility = "Hidden";
-    goalBtnContainer.appendChild(submitButton);
+    const updateGoalButton = document.createElement("button");
+    updateGoalButton.addEventListener("click", (e) => {
+      updateGoal(
+        e.target.parentElement.previousSibling.id,
+        textContainer.value
+      );
+      updateGoalButton.style.visibility = "Hidden";
+      editButton.style.visibility = "Visible";
+    });
+    updateGoalButton.textContent = "Update Goal";
+    updateGoalButton.classList.add("updateGoalBtn");
+    updateGoalButton.style.visibility = "Hidden";
+    goalBtnContainer.appendChild(updateGoalButton);
   }
 };
 
