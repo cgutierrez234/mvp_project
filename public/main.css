@@ -26,6 +26,7 @@
 
 #mainContainer {
   margin-top: 15%;
+  display: flex;
 }
 #createGoal {
   display: flex;
