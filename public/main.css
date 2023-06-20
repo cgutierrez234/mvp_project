@@ -24,6 +24,7 @@
 
 #goalsContainer {
   display: flex;
+  flex-direction: column;
 }
 
 .goalCard {
