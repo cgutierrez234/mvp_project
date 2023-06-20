@@ -65,6 +65,7 @@ const createGoalCards = (data) => {
   for (let goal of data) {
     const goalCard = document.createElement("div");
     goalCard.setAttribute("id", `${goal.id}`);
+    goalCard.classList.add("goalCard");
     goalsContainer.appendChild(goalCard);
 
     const textContentContainer = document.createElement("div");

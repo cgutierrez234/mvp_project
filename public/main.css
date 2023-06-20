@@ -3,8 +3,8 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box
-  font-family: 'IBM Plex Mono', monospace
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 #createBtn {
