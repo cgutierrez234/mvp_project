@@ -30,6 +30,7 @@ body {
 }
 
 #mainContainer {
+  margin-top: 10%;
   height: 800px;
   width: 600px;
   border: 1px solid black;
