@@ -42,7 +42,7 @@ h1 {
   border: 2px solid black;
   border-radius: 30px;
   background-color: rgb(222, 85, 6);
-  opacity: 0.15;
+  opacity: 0.35;
 }
 #createGoal {
   display: flex;
