@@ -47,3 +47,8 @@
   margin: auto;
   text-align: center;
 }
+
+.goalBtnContainer {
+  margin-top: 0.25 rem;
+  margin-bottom: 0.25 rem;
+}
