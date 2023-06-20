@@ -68,5 +68,5 @@ h1 {
 
 .textContentContainer {
   display: flex;
-  justify-content: left;
+  justify-content: start;
 }
