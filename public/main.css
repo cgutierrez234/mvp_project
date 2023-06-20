@@ -49,6 +49,7 @@ h1 {
 }
 
 #goalsContainer {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
 }
