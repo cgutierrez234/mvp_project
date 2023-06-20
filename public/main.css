@@ -10,6 +10,7 @@ body {
 }
 
 goal #goalsContainer {
+  width: 40 rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
