@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: url(./img/parchment.jpeg);
+  background: url(./img/parchment.jpeg) no-repeat center center/cover;
 }
 
 h1 {
