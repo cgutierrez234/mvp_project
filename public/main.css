@@ -25,9 +25,9 @@
 }
 
 #mainContainer {
-  margin-top: 15%;
+  margin-top: 10%;
   height: 800px;
-  width: 800 px;
+  width: 600 px;
   border-style: 1 px solid black;
   border-radius: 2px;
 }
