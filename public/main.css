@@ -19,11 +19,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5 rem;
+  margin-top: 5 auto;
 }
 
 #goalsContainer {
-  display: flex;
+  display: flex
+  justify-content: center;
+  align-items: center;
 }
 
 .goalCard {
