@@ -73,6 +73,7 @@ const createGoalCards = (data) => {
     goalCard.appendChild(textContentContainer);
 
     const goalBtnContainer = document.createElement("div");
+    goalBtnContainer.classList.add("goalBtnContainer");
     goalCard.appendChild(goalBtnContainer);
 
     const editButton = document.createElement("button");
@@ -96,8 +97,6 @@ const createGoalCards = (data) => {
 
     const updateGoalButton = document.createElement("button");
     updateGoalButton.addEventListener("click", (e) => {
-      console.log(e);
-      console.log(e.target.parentElement.parentElement.id);
       updateGoal(
         e.target.parentElement.parentElement.id,
         e.target.parentElement.previousSibling.innerText

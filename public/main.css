@@ -11,8 +11,13 @@
   cursor: pointer;
 }
 .editBtn,
-.deleteBtn {
+.deleteBtn,
+.updateGoalButton {
   cursor: pointer;
+}
+
+.editBtn {
+  padding-right: 1rem;
 }
 
 #mainContainer {
