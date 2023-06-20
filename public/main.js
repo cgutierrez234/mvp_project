@@ -69,6 +69,7 @@ const createGoalCards = (data) => {
     goalsContainer.appendChild(goalCard);
 
     const textContentContainer = document.createElement("div");
+    textContentContainer.classList.add("textContentContainer");
     textContentContainer.textContent = goal.goal;
     goalCard.appendChild(textContentContainer);
 

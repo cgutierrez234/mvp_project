@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5 auto;
+  margin-bottom: 1.5 rem;
 }
 
 #goalsContainer {
