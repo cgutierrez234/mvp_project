@@ -47,6 +47,7 @@ const updateGoal = async (id, text) => {
       "content-type": "application/json",
     },
     body: JSON.stringify({
+      id: id,
       goal: `${text}`,
     }),
   };
@@ -91,10 +92,7 @@ const createGoalCards = (data) => {
 
     const updateGoalButton = document.createElement("button");
     updateGoalButton.addEventListener("click", (e) => {
-      updateGoal(
-        e.target.parentElement.previousSibling.id,
-        textContentContainer.value
-      );
+      updateGoal(goal.id, text);
       updateGoalButton.style.visibility = "Hidden";
       editButton.style.visibility = "Visible";
     });
